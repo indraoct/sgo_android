@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">SGOTicket</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_onewaytrip">OnewaytripActivity</string>
+    <string name="title_activity_returntrip">ReturntripActivity</string>
+    <string name="title_activity_halamansatu">HalamansatuActivity</string>
+    <string name="title_activity_satuarahmenu">SatuarahmenuActivity</string>
+
+    <string-array name="adult_value">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </string-array>
+
+    <string-array name="child_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="infant_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="title_value">
+        <item>MR</item>
+        <item>MS</item>
+    </string-array>
+
+    <string-array name="gender_value">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string name="title_activity_aavailability">AavailabilityActivity</string>
+    <string name="title_activity_scheduleair">ScheduleairActivity</string>
+    <string name="title_activity_availabilityreturn">Availabilityreturn</string>
+    <string name="title_activity_cont_pass">ContPassActivity</string>
+    <string name="title_activity_passenger">PassengerActivity</string>
+    <string name="title_activity_popup_passenger">PopupPassengerActivity</string>
+    <string name="title_activity_booking_confirm">BookingConfirmActivity</string>
+    <string name="title_activity_inquiry_transaction">InquiryTransaction</string>
+    <string name="title_activity_paymentmenu">PaymentmenuActivity</string>
+    <string name="title_activity_internet_banking">InternetBankingActivity</string>
+    <string name="title_activity_paymentweb">PaymentwebActivity</string>
+    <string name="title_activity_smsbanking">SmsbankingActivity</string>
+    <string name="title_activity_success">SuccessActivity</string>
+
+</resources>

@@ -1,0 +1,103 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.indraoctamaindra.PassengersActivity">
+
+    <LinearLayout android:layout_width="match_parent"
+        android:id="@+id/linear1"
+        android:orientation="horizontal"
+        android:layout_height="50dp"
+        android:gravity="center_horizontal"
+        android:background="#FFF"
+        >
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/logo"
+            android:layout_gravity="center_vertical"
+
+            />
+        <View
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:text=""
+            android:visibility="invisible"
+            />
+
+        <TextView
+            android:layout_width="170dp"
+            android:layout_height="match_parent"
+            android:text="Penumpang"
+            android:textSize="14pt"
+            />
+
+        <View
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:text=""
+            android:visibility="invisible"
+            />
+
+    </LinearLayout>
+
+
+    <!--&lt;!&ndash; Layout Loading &ndash;&gt;-->
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/loadingPanel"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:gravity="center"-->
+        <!--android:background="#000"-->
+        <!-->-->
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:orientation="vertical"-->
+            <!-->-->
+
+            <!--<ProgressBar-->
+                <!--android:id="@+id/progress"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center_horizontal"-->
+                <!--android:indeterminate="true" />-->
+
+            <!--<TextView-->
+                <!--android:text="Loading..."-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textColor="#FFF"-->
+                <!--android:layout_below="@id/progress"-->
+                <!--android:layout_gravity="center_horizontal"-->
+                <!--/>-->
+        <!--</LinearLayout>-->
+    <!--</RelativeLayout>-->
+
+    <!--&lt;!&ndash; Layout Loading &ndash;&gt;-->
+
+    <ListView
+        android:id="@+id/passengerList"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="50dp"
+        android:dividerHeight="0dp"
+        >
+    </ListView>
+
+
+    <Button
+        android:id="@+id/btnSumbitPass"
+        android:text="Submit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#F7AA45"
+        />
+
+
+</RelativeLayout>

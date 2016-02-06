@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.indraoctamaindra.sgoticket" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.indraoctamaindra.sgoticket.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.indraoctamaindra.sgoticket.TrainActivity"
+            android:label="@string/title_activity_returntrip" >
+        </activity>
+        <activity
+            android:name="com.indraoctamaindra.sgoticket.AirlinesActivity"
+            android:label="@string/title_activity_satuarahmenu" >
+        </activity>
+        <activity
+            android:name="com.indraoctamaindra.sgoticket.AavailabilityActivity"
+            android:label="@string/title_activity_aavailability"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.indraoctamaindra.sgoticket.AvailabilityreturnActivity"
+            android:label="@string/title_activity_availabilityreturn"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.indraoctamaindra.sgoticket.ContactActivity"
+            android:label="@string/title_activity_cont_pass"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.indraoctamaindra.sgoticket.PassengerActivity"
+            android:label="@string/title_activity_passenger"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.indraoctamaindra.sgoticket.PopupPassengerActivity"
+            android:label="@string/title_activity_popup_passenger"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.indraoctamaindra.sgoticket.BookingConfirmActivity"
+            android:label="@string/title_activity_booking_confirm"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.indraoctamaindra.InquiryTransaction"
+            android:label="@string/title_activity_inquiry_transaction"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.indraoctamaindra.sgoticket.PaymentmenuActivity"
+            android:label="@string/title_activity_paymentmenu"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.indraoctamaindra.sgoticket.InternetBankingActivity"
+            android:label="@string/title_activity_internet_banking" >
+        </activity>
+        <activity
+            android:name="com.indraoctamaindra.sgoticket.PaymentwebActivity"
+            android:label="@string/title_activity_paymentweb" >
+        </activity>
+        <activity
+            android:name="com.indraoctamaindra.sgoticket.SmsbankingActivity"
+            android:label="@string/title_activity_smsbanking" >
+        </activity>
+    </application>
+
+</manifest>

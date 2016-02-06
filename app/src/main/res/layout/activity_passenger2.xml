@@ -1,0 +1,1328 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.indraoctamaindra.PassengersActivity">
+
+    <LinearLayout android:layout_width="match_parent"
+        android:id="@+id/linear2"
+        android:orientation="horizontal"
+        android:layout_height="50dp"
+        android:gravity="center_horizontal"
+        android:background="#FFF"
+
+        >
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/logo"
+            android:layout_gravity="center_vertical"
+
+            />
+        <View
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:text=""
+            android:visibility="invisible"
+            />
+
+        <TextView
+            android:layout_width="170dp"
+            android:layout_height="match_parent"
+            android:text="Penumpang"
+            android:textSize="14pt"
+            />
+
+        <View
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:text=""
+            android:visibility="invisible"
+            />
+
+    </LinearLayout>
+
+
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content"
+        android:id="@+id/scrollView3">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            >
+
+                <LinearLayout
+                    android:layout_marginTop="50dp"
+                    android:paddingLeft="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            android:id="@+id/nomer1"
+                            android:text="1"
+                            android:textColor="#8E4EFC"
+                            android:textSize="19pt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:fadeScrollbars="false"
+                            />
+
+                        <TextView
+                            android:id="@+id/titletext1"
+                            android:text="Title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:gravity="center"
+                            android:fadeScrollbars="false"
+                            />
+
+                        <TextView
+                            android:text="Firstname"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:gravity="center"
+                            android:fadeScrollbars="false"
+                            />
+                        <TextView
+                            android:text="Lastname"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:gravity="center"
+                            android:fadeScrollbars="false"
+                            />
+                        <TextView
+                            android:text="Birth Date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:gravity="center"
+                            android:fadeScrollbars="false"
+                            />
+                        <TextView
+                            android:text="Pax Type"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:gravity="center"
+                            android:fadeScrollbars="false"
+                            />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <TextView
+                            android:layout_width="250dp"
+                            android:layout_height="50dp"
+                            android:visibility="invisible"
+                            android:fadeScrollbars="false"
+                            />
+
+                        <EditText
+                            android:layout_width="250dp"
+                            android:layout_height="50dp"
+                            android:focusable="true"
+                            android:descendantFocusability="beforeDescendants"
+                            android:focusableInTouchMode="true"
+                            android:id="@+id/title1"
+                            android:fadeScrollbars="false"
+                            />
+
+                        <EditText
+                            android:layout_width="250dp"
+                            android:layout_height="50dp"
+                            android:id="@+id/first_name1"
+                            android:inputType="text"
+                            android:fadeScrollbars="false"
+                            />
+
+                        <EditText
+                            android:layout_width="250dp"
+                            android:layout_height="50dp"
+                            android:id="@+id/last_name1"
+                            android:inputType="text"
+                            android:fadeScrollbars="false"
+                            />
+
+                        <EditText
+                            android:layout_width="250dp"
+                            android:layout_height="50dp"
+                            android:id="@+id/birthdate1"
+                            android:inputType="text"
+                            android:fadeScrollbars="false"
+                            />
+
+                        <EditText
+                            android:layout_width="250dp"
+                            android:layout_height="50dp"
+                            android:id="@+id/pax_type1"
+                            android:inputType="text"
+                            android:fadeScrollbars="false"
+                            />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="50dp"
+                    android:paddingLeft="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            android:id="@+id/nomer2"
+                            android:text="2"
+                            android:textColor="#8E4EFC"
+                            android:textSize="19pt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:fadeScrollbars="false"
+                            />
+
+                        <TextView
+                            android:id="@+id/titletext2"
+                            android:text="Title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:gravity="center"
+                            android:fadeScrollbars="false"
+                            />
+
+                        <TextView
+                            android:text="Firstname"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:gravity="center"
+                            android:fadeScrollbars="false"
+                            />
+                        <TextView
+                            android:text="Lastname"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:gravity="center"
+                            android:fadeScrollbars="false"
+                            />
+                        <TextView
+                            android:text="Birth Date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:gravity="center"
+                            android:fadeScrollbars="false"
+                            />
+                        <TextView
+                            android:text="Pax Type"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:gravity="center"
+                            android:fadeScrollbars="false"
+                            />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <TextView
+                            android:layout_width="250dp"
+                            android:layout_height="50dp"
+                            android:visibility="invisible"
+                            android:fadeScrollbars="false"
+                            />
+
+                        <EditText
+                            android:layout_width="250dp"
+                            android:layout_height="50dp"
+                            android:focusable="true"
+                            android:descendantFocusability="beforeDescendants"
+                            android:focusableInTouchMode="true"
+                            android:id="@+id/title2"
+                            android:fadeScrollbars="false"
+                            />
+
+                        <EditText
+                            android:layout_width="250dp"
+                            android:layout_height="50dp"
+                            android:id="@+id/first_name2"
+                            android:inputType="text"
+                            android:fadeScrollbars="false"
+                            />
+
+                        <EditText
+                            android:layout_width="250dp"
+                            android:layout_height="50dp"
+                            android:id="@+id/last_name2"
+                            android:inputType="text"
+                            android:fadeScrollbars="false"
+                            />
+
+                        <EditText
+                            android:layout_width="250dp"
+                            android:layout_height="50dp"
+                            android:id="@+id/birthdate2"
+                            android:inputType="text"
+                            android:fadeScrollbars="false"
+                            />
+
+                        <EditText
+                            android:layout_width="250dp"
+                            android:layout_height="50dp"
+                            android:id="@+id/pax_type2"
+                            android:inputType="text"
+                            android:fadeScrollbars="false"
+                            />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="50dp"
+                    android:paddingLeft="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            android:id="@+id/nomer3"
+                            android:text="3"
+                            android:textColor="#8E4EFC"
+                            android:textSize="19pt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:fadeScrollbars="false"
+                            />
+
+                        <TextView
+                            android:id="@+id/titletext3"
+                            android:text="Title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:gravity="center"
+                            android:fadeScrollbars="false"
+                            />
+
+                        <TextView
+                            android:text="Firstname"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:gravity="center"
+                            android:fadeScrollbars="false"
+                            />
+                        <TextView
+                            android:text="Lastname"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:gravity="center"
+                            android:fadeScrollbars="false"
+                            />
+                        <TextView
+                            android:text="Birth Date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:gravity="center"
+                            android:fadeScrollbars="false"
+                            />
+                        <TextView
+                            android:text="Pax Type"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:gravity="center"
+                            android:fadeScrollbars="false"
+                            />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <TextView
+                            android:layout_width="250dp"
+                            android:layout_height="50dp"
+                            android:visibility="invisible"
+                            android:fadeScrollbars="false"
+                            />
+
+                        <EditText
+                            android:layout_width="250dp"
+                            android:layout_height="50dp"
+                            android:focusable="true"
+                            android:descendantFocusability="beforeDescendants"
+                            android:focusableInTouchMode="true"
+                            android:id="@+id/title3"
+                            android:fadeScrollbars="false"
+                            />
+
+                        <EditText
+                            android:layout_width="250dp"
+                            android:layout_height="50dp"
+                            android:id="@+id/first_name3"
+                            android:inputType="text"
+                            android:fadeScrollbars="false"
+                            />
+
+                        <EditText
+                            android:layout_width="250dp"
+                            android:layout_height="50dp"
+                            android:id="@+id/last_name3"
+                            android:inputType="text"
+                            android:fadeScrollbars="false"
+                            />
+
+                        <EditText
+                            android:layout_width="250dp"
+                            android:layout_height="50dp"
+                            android:id="@+id/birthdate3"
+                            android:inputType="text"
+                            android:fadeScrollbars="false"
+                            />
+
+                        <EditText
+                            android:layout_width="250dp"
+                            android:layout_height="50dp"
+                            android:id="@+id/pax_type3"
+                            android:inputType="text"
+                            android:fadeScrollbars="false"
+                            />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="50dp"
+                    android:paddingLeft="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            android:id="@+id/nomer4"
+                            android:text="4"
+                            android:textColor="#8E4EFC"
+                            android:textSize="19pt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:fadeScrollbars="false"
+                            />
+
+                        <TextView
+                            android:id="@+id/titletext4"
+                            android:text="Title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:gravity="center"
+                            android:fadeScrollbars="false"
+                            />
+
+                        <TextView
+                            android:text="Firstname"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:gravity="center"
+                            android:fadeScrollbars="false"
+                            />
+                        <TextView
+                            android:text="Lastname"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:gravity="center"
+                            android:fadeScrollbars="false"
+                            />
+                        <TextView
+                            android:text="Birth Date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:gravity="center"
+                            android:fadeScrollbars="false"
+                            />
+                        <TextView
+                            android:text="Pax Type"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:gravity="center"
+                            android:fadeScrollbars="false"
+                            />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <TextView
+                            android:layout_width="250dp"
+                            android:layout_height="50dp"
+                            android:visibility="invisible"
+                            android:fadeScrollbars="false"
+                            />
+
+                        <EditText
+                            android:layout_width="250dp"
+                            android:layout_height="50dp"
+                            android:focusable="true"
+                            android:descendantFocusability="beforeDescendants"
+                            android:focusableInTouchMode="true"
+                            android:id="@+id/title4"
+                            android:fadeScrollbars="false"
+                            />
+
+                        <EditText
+                            android:layout_width="250dp"
+                            android:layout_height="50dp"
+                            android:id="@+id/first_name4"
+                            android:inputType="text"
+                            android:fadeScrollbars="false"
+                            />
+
+                        <EditText
+                            android:layout_width="250dp"
+                            android:layout_height="50dp"
+                            android:id="@+id/last_name4"
+                            android:inputType="text"
+                            android:fadeScrollbars="false"
+                            />
+
+                        <EditText
+                            android:layout_width="250dp"
+                            android:layout_height="50dp"
+                            android:id="@+id/birthdate4"
+                            android:inputType="text"
+                            android:fadeScrollbars="false"
+                            />
+
+                        <EditText
+                            android:layout_width="250dp"
+                            android:layout_height="50dp"
+                            android:id="@+id/pax_type4"
+                            android:inputType="text"
+                            android:fadeScrollbars="false"
+                            />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="50dp"
+                    android:paddingLeft="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            android:id="@+id/nomer5"
+                            android:text="5"
+                            android:textColor="#8E4EFC"
+                            android:textSize="19pt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:fadeScrollbars="false"
+                            />
+
+                        <TextView
+                            android:id="@+id/titletext5"
+                            android:text="Title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:gravity="center"
+                            android:fadeScrollbars="false"
+                            />
+
+                        <TextView
+                            android:text="Firstname"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:gravity="center"
+                            android:fadeScrollbars="false"
+                            />
+                        <TextView
+                            android:text="Lastname"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:gravity="center"
+                            android:fadeScrollbars="false"
+                            />
+                        <TextView
+                            android:text="Birth Date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:gravity="center"
+                            android:fadeScrollbars="false"
+                            />
+                        <TextView
+                            android:text="Pax Type"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:gravity="center"
+                            android:fadeScrollbars="false"
+                            />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <TextView
+                            android:layout_width="250dp"
+                            android:layout_height="50dp"
+                            android:visibility="invisible"
+                            android:fadeScrollbars="false"
+                            />
+
+                        <EditText
+                            android:layout_width="250dp"
+                            android:layout_height="50dp"
+                            android:focusable="true"
+                            android:descendantFocusability="beforeDescendants"
+                            android:focusableInTouchMode="true"
+                            android:id="@+id/title5"
+                            android:fadeScrollbars="false"
+                            />
+
+                        <EditText
+                            android:layout_width="250dp"
+                            android:layout_height="50dp"
+                            android:id="@+id/first_name5"
+                            android:inputType="text"
+                            android:fadeScrollbars="false"
+                            />
+
+                        <EditText
+                            android:layout_width="250dp"
+                            android:layout_height="50dp"
+                            android:id="@+id/last_name5"
+                            android:inputType="text"
+                            android:fadeScrollbars="false"
+                            />
+
+                        <EditText
+                            android:layout_width="250dp"
+                            android:layout_height="50dp"
+                            android:id="@+id/birthdate5"
+                            android:inputType="text"
+                            android:fadeScrollbars="false"
+                            />
+
+                        <EditText
+                            android:layout_width="250dp"
+                            android:layout_height="50dp"
+                            android:id="@+id/pax_type5"
+                            android:inputType="text"
+                            android:fadeScrollbars="false"
+                            />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="50dp"
+                    android:paddingLeft="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            android:id="@+id/nomer6"
+                            android:text="6"
+                            android:textColor="#8E4EFC"
+                            android:textSize="19pt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:fadeScrollbars="false"
+                            />
+
+                        <TextView
+                            android:id="@+id/titletext6"
+                            android:text="Title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:gravity="center"
+                            android:fadeScrollbars="false"
+                            />
+
+                        <TextView
+                            android:text="Firstname"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:gravity="center"
+                            android:fadeScrollbars="false"
+                            />
+                        <TextView
+                            android:text="Lastname"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:gravity="center"
+                            android:fadeScrollbars="false"
+                            />
+                        <TextView
+                            android:text="Birth Date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:gravity="center"
+                            android:fadeScrollbars="false"
+                            />
+                        <TextView
+                            android:text="Pax Type"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:gravity="center"
+                            android:fadeScrollbars="false"
+                            />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <TextView
+                            android:layout_width="250dp"
+                            android:layout_height="50dp"
+                            android:visibility="invisible"
+                            android:fadeScrollbars="false"
+                            />
+
+                        <EditText
+                            android:layout_width="250dp"
+                            android:layout_height="50dp"
+                            android:focusable="true"
+                            android:descendantFocusability="beforeDescendants"
+                            android:focusableInTouchMode="true"
+                            android:id="@+id/title6"
+                            android:fadeScrollbars="false"
+                            />
+
+                        <EditText
+                            android:layout_width="250dp"
+                            android:layout_height="50dp"
+                            android:id="@+id/first_name6"
+                            android:inputType="text"
+                            android:fadeScrollbars="false"
+                            />
+
+                        <EditText
+                            android:layout_width="250dp"
+                            android:layout_height="50dp"
+                            android:id="@+id/last_name6"
+                            android:inputType="text"
+                            android:fadeScrollbars="false"
+                            />
+
+                        <EditText
+                            android:layout_width="250dp"
+                            android:layout_height="50dp"
+                            android:id="@+id/birthdate6"
+                            android:inputType="text"
+                            android:fadeScrollbars="false"
+                            />
+
+                        <EditText
+                            android:layout_width="250dp"
+                            android:layout_height="50dp"
+                            android:id="@+id/pax_type6"
+                            android:inputType="text"
+                            android:fadeScrollbars="false"
+                            />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="50dp"
+                    android:paddingLeft="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+
+                        <TextView
+                            android:id="@+id/nomer7"
+                            android:text="7"
+                            android:textColor="#8E4EFC"
+                            android:textSize="19pt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:fadeScrollbars="false"
+                            />
+
+                        <TextView
+                            android:id="@+id/titletext7"
+                            android:text="Title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:gravity="center"
+                            android:fadeScrollbars="false"
+                            />
+
+                        <TextView
+                            android:text="Firstname"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:gravity="center"
+                            android:fadeScrollbars="false"
+                            />
+                        <TextView
+                            android:text="Lastname"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:gravity="center"
+                            android:fadeScrollbars="false"
+                            />
+                        <TextView
+                            android:text="Birth Date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:gravity="center"
+                            android:fadeScrollbars="false"
+                            />
+                        <TextView
+                            android:text="Pax Type"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:gravity="center"
+                            android:fadeScrollbars="false"
+                            />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <TextView
+                            android:layout_width="250dp"
+                            android:layout_height="50dp"
+                            android:visibility="invisible"
+                            android:fadeScrollbars="false"
+                            />
+
+                        <EditText
+                            android:layout_width="250dp"
+                            android:layout_height="50dp"
+                            android:focusable="true"
+                            android:descendantFocusability="beforeDescendants"
+                            android:focusableInTouchMode="true"
+                            android:id="@+id/title"
+                            android:fadeScrollbars="false"
+                            />
+
+                        <EditText
+                            android:layout_width="250dp"
+                            android:layout_height="50dp"
+                            android:id="@+id/first_name7"
+                            android:inputType="text"
+                            android:fadeScrollbars="false"
+                            />
+
+                        <EditText
+                            android:layout_width="250dp"
+                            android:layout_height="50dp"
+                            android:id="@+id/last_name7"
+                            android:inputType="text"
+                            android:fadeScrollbars="false"
+                            />
+
+                        <EditText
+                            android:layout_width="250dp"
+                            android:layout_height="50dp"
+                            android:id="@+id/birthdate7"
+                            android:inputType="text"
+                            android:fadeScrollbars="false"
+                            />
+
+                        <EditText
+                            android:layout_width="250dp"
+                            android:layout_height="50dp"
+                            android:id="@+id/pax_type7"
+                            android:inputType="text"
+                            android:fadeScrollbars="false"
+                            />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="50dp"
+                android:paddingLeft="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <LinearLayout
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:id="@+id/nomer8"
+                        android:text="8"
+                        android:textColor="#8E4EFC"
+                        android:textSize="19pt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:fadeScrollbars="false"
+                        />
+
+                    <TextView
+                        android:id="@+id/titletext8"
+                        android:text="Title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:fadeScrollbars="false"
+                        />
+
+                    <TextView
+                        android:text="Firstname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:fadeScrollbars="false"
+                        />
+                    <TextView
+                        android:text="Lastname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:fadeScrollbars="false"
+                        />
+                    <TextView
+                        android:text="Birth Date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:fadeScrollbars="false"
+                        />
+                    <TextView
+                        android:text="Pax Type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:fadeScrollbars="false"
+                        />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <TextView
+                        android:layout_width="250dp"
+                        android:layout_height="50dp"
+                        android:visibility="invisible"
+                        android:fadeScrollbars="false"
+                        />
+
+                    <EditText
+                        android:layout_width="250dp"
+                        android:layout_height="50dp"
+                        android:focusable="true"
+                        android:descendantFocusability="beforeDescendants"
+                        android:focusableInTouchMode="true"
+                        android:id="@+id/title8"
+                        android:fadeScrollbars="false"
+                        />
+
+                    <EditText
+                        android:layout_width="250dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/first_name8"
+                        android:inputType="text"
+                        android:fadeScrollbars="false"
+                        />
+
+                    <EditText
+                        android:layout_width="250dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/last_name8"
+                        android:inputType="text"
+                        android:fadeScrollbars="false"
+                        />
+
+                    <EditText
+                        android:layout_width="250dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/birthdate8"
+                        android:inputType="text"
+                        android:fadeScrollbars="false"
+                        />
+
+                    <EditText
+                        android:layout_width="250dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/pax_type8"
+                        android:inputType="text"
+                        android:fadeScrollbars="false"
+                        />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="50dp"
+                android:paddingLeft="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <LinearLayout
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:id="@+id/nomer9"
+                        android:text="9"
+                        android:textColor="#8E4EFC"
+                        android:textSize="19pt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:fadeScrollbars="false"
+                        />
+
+                    <TextView
+                        android:id="@+id/titletext9"
+                        android:text="Title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:fadeScrollbars="false"
+                        />
+
+                    <TextView
+                        android:text="Firstname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:fadeScrollbars="false"
+                        />
+                    <TextView
+                        android:text="Lastname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:fadeScrollbars="false"
+                        />
+                    <TextView
+                        android:text="Birth Date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:fadeScrollbars="false"
+                        />
+                    <TextView
+                        android:text="Pax Type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:fadeScrollbars="false"
+                        />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <TextView
+                        android:layout_width="250dp"
+                        android:layout_height="50dp"
+                        android:visibility="invisible"
+                        android:fadeScrollbars="false"
+                        />
+
+                    <EditText
+                        android:layout_width="250dp"
+                        android:layout_height="50dp"
+                        android:focusable="true"
+                        android:descendantFocusability="beforeDescendants"
+                        android:focusableInTouchMode="true"
+                        android:id="@+id/title9"
+                        android:fadeScrollbars="false"
+                        />
+
+                    <EditText
+                        android:layout_width="250dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/first_name9"
+                        android:inputType="text"
+                        android:fadeScrollbars="false"
+                        />
+
+                    <EditText
+                        android:layout_width="250dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/last_name9"
+                        android:inputType="text"
+                        android:fadeScrollbars="false"
+                        />
+
+                    <EditText
+                        android:layout_width="250dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/birthdate9"
+                        android:inputType="text"
+                        android:fadeScrollbars="false"
+                        />
+
+                    <EditText
+                        android:layout_width="250dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/pax_type9"
+                        android:inputType="text"
+                        android:fadeScrollbars="false"
+                        />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="50dp"
+                android:paddingLeft="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <LinearLayout
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:id="@+id/nomer10"
+                        android:text="10"
+                        android:textColor="#8E4EFC"
+                        android:textSize="19pt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:fadeScrollbars="false"
+                        />
+
+                    <TextView
+                        android:id="@+id/titletext10"
+                        android:text="Title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:fadeScrollbars="false"
+                        />
+
+                    <TextView
+                        android:text="Firstname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:fadeScrollbars="false"
+                        />
+                    <TextView
+                        android:text="Lastname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:fadeScrollbars="false"
+                        />
+                    <TextView
+                        android:text="Birth Date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:fadeScrollbars="false"
+                        />
+                    <TextView
+                        android:text="Pax Type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:fadeScrollbars="false"
+                        />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <TextView
+                        android:layout_width="250dp"
+                        android:layout_height="50dp"
+                        android:visibility="invisible"
+                        android:fadeScrollbars="false"
+                        />
+
+                    <EditText
+                        android:layout_width="250dp"
+                        android:layout_height="50dp"
+                        android:focusable="true"
+                        android:descendantFocusability="beforeDescendants"
+                        android:focusableInTouchMode="true"
+                        android:id="@+id/title10"
+                        android:fadeScrollbars="false"
+                        />
+
+                    <EditText
+                        android:layout_width="250dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/first_name10"
+                        android:inputType="text"
+                        android:fadeScrollbars="false"
+                        />
+
+                    <EditText
+                        android:layout_width="250dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/last_name10"
+                        android:inputType="text"
+                        android:fadeScrollbars="false"
+                        />
+
+                    <EditText
+                        android:layout_width="250dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/birthdate10"
+                        android:inputType="text"
+                        android:fadeScrollbars="false"
+                        />
+
+                    <EditText
+                        android:layout_width="250dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/pax_type10"
+                        android:inputType="text"
+                        android:fadeScrollbars="false"
+                        />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnSumbitPass"
+        android:text="Submit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#F7AA45"
+        />
+
+
+</RelativeLayout>

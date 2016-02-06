@@ -1,0 +1,330 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.indraoctamaindra.sgoticket.PaymentmenuActivity">
+
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+    android:id="@+id/scrollView2">
+
+  <LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout android:layout_width="match_parent"
+                android:id="@+id/linear1"
+                android:orientation="horizontal"
+                android:layout_height="50dp"
+                android:gravity="center_horizontal"
+                android:background="#FFF"
+                >
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/logo"
+                    android:layout_gravity="center_vertical"
+
+                    />
+                <View
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:text=""
+                    android:visibility="invisible"
+                    />
+
+                <TextView
+                    android:layout_width="170dp"
+                    android:layout_height="match_parent"
+                    android:text="Menu Pembayaran"
+                    android:textSize="9pt"
+                    android:gravity="center_vertical"
+                    />
+
+                <View
+                    android:layout_width="90dp"
+                    android:layout_height="match_parent"
+                    android:text=""
+                    android:visibility="invisible"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="800dp"
+                android:orientation="vertical"
+                android:layout_marginTop="50dp"
+                android:background="#FFF"
+                >
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+
+                    >
+                    <LinearLayout
+                        android:background="#8D7DE8"
+                        android:id="@+id/ibank"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        >
+
+                        <TextView
+                            android:layout_marginLeft="5dp"
+                            android:textColor="#FFF"
+                            android:text="Internet Banking"
+                            android:layout_width="140dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="8pt"
+                            />
+
+                        <TextView
+                            android:textColor="#FFF"
+                            android:gravity="right"
+                            android:text=">>"
+                            android:layout_width="30dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="8pt"
+                            />
+
+                    </LinearLayout>
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@drawable/border"
+                        />
+                    <LinearLayout
+                        android:background="#8D7DE8"
+                        android:id="@+id/sms"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        >
+
+                        <TextView
+                            android:layout_marginLeft="5dp"
+                            android:textColor="#FFF"
+                            android:text="SMS Banking"
+                            android:layout_width="140dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="8pt"
+                            />
+
+                        <TextView
+                            android:textColor="#FFF"
+                            android:gravity="right"
+                            android:text=">>"
+                            android:layout_width="30dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="8pt"
+                            />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@drawable/border"
+                        />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+
+                    >
+                    <LinearLayout
+
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textColor="#FFF"
+                            android:background="#38B6E0"
+                            android:gravity="center"
+                            android:text="Booking Code"
+                            android:textSize="8pt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:gravity="center"
+                            android:id="@+id/booking_code"
+                            android:textSize="8pt"
+                            android:text="Bla bla"
+                            android:textColor="#AC4DC4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textColor="#FFF"
+                            android:background="#38B6E0"
+                            android:gravity="center"
+                            android:text="Kontak"
+                            android:textSize="8pt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:gravity="center"
+                            android:textColor="#AC4DC4"
+                            android:id="@+id/kontak"
+                            android:text="Bla bla"
+                            android:textSize="8pt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textColor="#FFF"
+                            android:background="#38B6E0"
+                            android:gravity="center"
+                            android:text="Flight Info"
+                            android:textSize="8pt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:gravity="center"
+                            android:textColor="#AC4DC4"
+                            android:id="@+id/flight_info"
+                            android:text="Bla blaBla"
+                            android:textSize="8pt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textColor="#FFF"
+                            android:background="#38B6E0"
+                            android:gravity="center"
+                            android:text="Penumpang"
+                            android:textSize="8pt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:gravity="center"
+                            android:textColor="#AC4DC4"
+                            android:id="@+id/penumpang"
+                            android:text="Bla blaBla"
+                            android:textSize="8pt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textColor="#FFF"
+                            android:background="#38B6E0"
+                            android:gravity="center"
+                            android:text="Biaya Awal (Rp)"
+                            android:textSize="8pt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:gravity="center"
+                            android:textColor="#AC4DC4"
+                            android:id="@+id/basic_amount"
+                            android:text="Bla blaBla"
+                            android:textSize="8pt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textColor="#FFF"
+                            android:background="#38B6E0"
+                            android:gravity="center"
+                            android:text="Biaya Admin (Rp)"
+                            android:textSize="8pt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:gravity="center"
+                            android:textColor="#AC4DC4"
+                            android:id="@+id/total_admin"
+                            android:text="Bla blaBla"
+                            android:textSize="8pt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textColor="#FFF"
+                            android:background="#38B6E0"
+                            android:gravity="center"
+                            android:text="Harga Total (Rp)"
+                            android:textSize="8pt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:gravity="center"
+                            android:textColor="#AC4DC4"
+                            android:id="@+id/total"
+                            android:text="Bla blaBla"
+                            android:textSize="8pt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+   </LinearLayout>
+</ScrollView>
+
+</RelativeLayout>
